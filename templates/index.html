@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Automático</title>
+</head>
+<body>
+    <h1>Formulario Automático</h1>
+    <form action="/procesar" method="post" enctype="multipart/form-data">
+        <input type="file" name="imagen" accept="image/*">
+        <input type="submit" value="Enviar">
+    </form>
+
+    {% if campo1 %}
+        <h2>Resultado:</h2>
+        <input type="text" value="{{ campo1 }}"><br>
+        <input type="text" value="{{ campo2 }}"><br>
+        <input type="text" value="{{ campo3 }}"><br>
+    {% endif %}
+</body>
+</html>
+<!-- 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Automático</title>
+</head>
+<body>
+    <h1>Formulario Automático</h1>
+    <form action="/procesar" method="post" enctype="multipart/form-data">
+        <input type="file" name="archivo_pdf" accept="application/pdf">
+        <input type="submit" value="Enviar">
+    </form>
+
+    {% if campo1 %}
+        <h2>Resultado:</h2>
+        <input type="text" value="{{ campo1 }}"><br>
+        <input type="text" value="{{ campo2 }}"><br>
+        <input type="text" value="{{ campo3 }}"><br>
+    {% endif %}
+</body>
+</html> -->
